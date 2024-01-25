@@ -11,7 +11,7 @@ const read = async () => {
   const stream = fs.createReadStream(filePath, 'utf8');
   stream.on('data', (chunk) => data += chunk);
   stream.on('end', () => console.log(data));
-  stream.on('error', () => console.log('Error: FS operation failed'));
+  stream.on('error', () => console.error('Error: FS operation failed'));
 };
 
 await read();
