@@ -1,6 +1,6 @@
-import path from "node:path";
-import { release, version } from "node:os";
-import { createServer as createServerHttp } from "node:http";
+import path from 'node:path';
+import { release, version } from 'node:os';
+import { createServer as createServerHttp } from 'node:http';
 import './files/c.js';
 import { fileURLToPath } from 'node:url';
 
@@ -12,9 +12,9 @@ const random = Math.random();
 let unknownObject;
 
 if (random > 0.5) {
-    unknownObject = await import('./files/a.json', { assert: { type: "json" } });
+    unknownObject = await import('./files/a.json', { assert: { type: 'json' } });
 } else {
-    unknownObject = await import('./files/b.json', { assert: { type: "json" } });
+    unknownObject = await import('./files/b.json', { assert: { type: 'json' } });
 }
 
 process.removeAllListeners('warning');

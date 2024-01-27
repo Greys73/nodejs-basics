@@ -1,7 +1,7 @@
-import fs from "node:fs";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import { stdout } from "node:process";
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { stdout } from 'node:process';
 
 const dirName = path.dirname(fileURLToPath(import.meta.url));
 

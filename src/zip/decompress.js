@@ -1,8 +1,8 @@
-import fs from "node:fs";
-import zlib, { unzip } from "node:zlib";
-import stream from "node:stream";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import fs from 'node:fs';
+import zlib from 'node:zlib';
+import stream from 'node:stream';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const dirName = path.dirname(fileURLToPath(import.meta.url));
 

@@ -1,8 +1,8 @@
-import fs from "node:fs";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import * as readline from 'node:readline';
-import process from "node:process";
+import process from 'node:process';
 
 const dirName = path.dirname(fileURLToPath(import.meta.url));
 
