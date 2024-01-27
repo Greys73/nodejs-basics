@@ -1,5 +1,5 @@
-import os from 'os';
-import wt from 'worker_threads';
+import os from 'node:os';
+import wt from 'node:worker_threads';
 
 const INCREMENT = 10;
 const WORKER_PATH = './src/wt/worker.js';

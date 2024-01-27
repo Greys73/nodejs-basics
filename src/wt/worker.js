@@ -1,4 +1,4 @@
-import * as wt from 'worker_threads';
+import * as wt from 'node:worker_threads';
 
 const nthFibonacci = (n) => n < 2 ? n : nthFibonacci(n - 1) + nthFibonacci(n - 2);
 
